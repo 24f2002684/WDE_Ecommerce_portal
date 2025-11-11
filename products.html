@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products - MyShop</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+        }
+
+        nav li {
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="text-align:center; margin-top:20px;">Available Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <h3>Product 1</h3>
+            <p>₹499</p>
+            <a href="#" class="btn">Add to Wishlist</a>
+        </div>
+        <div class="card">
+            <h3>Product 2</h3>
+            <p>₹799</p>
+            <a href="#" class="btn">Add to Wishlist</a>
+        </div>
+        <div class="card">
+            <h3>Product 3</h3>
+            <p>₹299</p>
+            <a href="#" class="btn">Add to Wishlist</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

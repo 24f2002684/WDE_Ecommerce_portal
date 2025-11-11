@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register - MyShop</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="regForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <input type="password" id="confirm" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <br><br>
+        <a href="index.html">To go Home Click Here!</a>
+    </div>
+
+    <script>
+        document.getElementById("regForm").addEventListener("submit", function (event) {
+            let pass = document.getElementById("pass").value;
+            let confirm = document.getElementById("confirm").value;
+
+            if (pass !== confirm) {
+                alert("Passwords do not match");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews & Comments - Simple E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        .review-box {
+            padding: 10px;
+            background: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <script>
+        function addReview() {
+            let text = document.getElementById("comment").value;
+            if (text === "") {
+                alert("Please enter a review!");
+                return false;
+            }
+
+            let box = document.createElement("div");
+            box.className = "review-box";
+            box.innerText = text;
+
+            document.getElementById("reviewSection").appendChild(box);
+            document.getElementById("comment").value = "";
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="orders.html">Orders</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Customer Reviews</h2>
+
+        <div id="reviewSection">
+            <div class="review-box">Great product quality!</div>
+            <div class="review-box">Fast delivery and good support.</div>
+        </div>
+
+        <h3>Leave a Comment</h3>
+        <form onsubmit="return addReview()">
+            <label>Your Review:</label>
+            <textarea id="comment" rows="3"></textarea>
+            <button type="submit">Post Review</button>
+        </form>
+    </div>
+
+    <footer>&copy; 2025 Simple E-Commerce Website</footer>
+
+</body>
+
+</html>
