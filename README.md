@@ -6,6 +6,7 @@ It is created using **HTML, CSS, and JavaScript only** — no backend or advance
 ---
 
 ## Project Structure
+
  E-Commerce-Website
 ├── index.html → Home page
 ├── products.html → Product listing page
@@ -17,7 +18,7 @@ It is created using **HTML, CSS, and JavaScript only** — no backend or advance
 
 ---
 
-##  Features
+## Features
 
 - Simple navigation menu (Home, Products, About Us, Contact Us)
 - User registration and login with **basic JavaScript validation**
@@ -27,7 +28,7 @@ It is created using **HTML, CSS, and JavaScript only** — no backend or advance
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
 - **HTML** — Structure of web pages  
 - **CSS** — Basic internal styling  
@@ -38,6 +39,7 @@ It is created using **HTML, CSS, and JavaScript only** — no backend or advance
 ## How to Run
 
 1. Download or clone this repository  
+
    ```bash
    git clone https://github.com/yourusername/E-Commerce-Website.git
 2. Open the project folder
