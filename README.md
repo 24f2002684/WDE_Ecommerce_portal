@@ -42,8 +42,10 @@ It is created using **HTML, CSS, and JavaScript only** — no backend or advance
 
    ```bash
    git clone https://github.com/yourusername/E-Commerce-Website.git
-2. Open the project folder
-3. Run index.html in your browser
+   ```
+
+2. Open the project folder  
+3. Run `index.html` in your browser
 
  Author
 
